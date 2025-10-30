@@ -1,0 +1,535 @@
+// Data untuk periodesasi sejarah
+const periodData = {
+    "prasejarah": {
+        title: "Masa Prasejarah Indonesia",
+        content: `
+            <h2>Masa Prasejarah Indonesia</h2>
+            <p>Masa prasejarah Indonesia mencakup periode sebelum adanya catatan tertulis. Berdasarkan temuan arkeologi, manusia telah menghuni kepulauan Indonesia sejak sekitar 1,5 juta tahun yang lalu.</p>
+            
+            <h3>Manusia Purba di Indonesia</h3>
+            <ul>
+                <li><strong>Pithecanthropus Erectus</strong> (Manusia Jawa): Ditemukan oleh Eugene Dubois di Trinil, Jawa Timur pada tahun 1891</li>
+                <li><strong>Homo Soloensis</strong>: Ditemukan di Ngandong, Jawa Tengah</li>
+                <li><strong>Homo Wajakensis</strong>: Ditemukan di Wajak, Jawa Timur</li>
+                <li><strong>Homo Floresiensis</strong> (Manusia Flores): Ditemukan di Liang Bua, Flores</li>
+            </ul>
+            
+            <h3>Zaman Batu</h3>
+            <ul>
+                <li><strong>Paleolitikum</strong> (Zaman Batu Tua): Alat-alat dari batu masih kasar</li>
+                <li><strong>Mesolitikum</strong> (Zaman Batu Tengah): Munculnya budaya Kjokkenmoddinger dan Abris Sous Roche</li>
+                <li><strong>Neolitikum</strong> (Zaman Batu Muda): Revolusi Neolitik dengan perkembangan pertanian dan peternakan</li>
+                <li><strong>Megalitikum</strong> (Zaman Batu Besar): Pembuatan bangunan dari batu besar seperti menhir, dolmen, dan sarkofagus</li>
+            </ul>
+            
+            <h3>Zaman Logam</h3>
+            <ul>
+                <li><strong>Zaman Perunggu</strong>: Ditemukan nekara, moko, dan perhiasan perunggu</li>
+                <li><strong>Zaman Besi</strong>: Penggunaan besi untuk alat-alat kehidupan</li>
+            </ul>
+        `
+    },
+    "hindu-buddha": {
+        title: "Kerajaan Hindu-Buddha di Indonesia",
+        content: `
+            <h2>Kerajaan Hindu-Buddha di Indonesia</h2>
+            <p>Pengaruh Hindu-Buddha mulai masuk ke Indonesia sekitar abad ke-4 Masehi, dibawa oleh pedagang India. Pengaruh ini melahirkan kerajaan-kerajaan bercorak Hindu-Buddha di Nusantara.</p>
+            
+            <h3>Kerajaan-Kerajaan Penting</h3>
+            <ul>
+                <li><strong>Kerajaan Kutai</strong> (abad ke-4): Kerajaan Hindu tertua di Indonesia, terletak di Kalimantan Timur</li>
+                <li><strong>Kerajaan Tarumanegara</strong> (abad ke-4 hingga ke-7): Kerajaan Hindu di Jawa Barat</li>
+                <li><strong>Kerajaan Sriwijaya</strong> (abad ke-7 hingga ke-14): Kerajaan Buddha yang menguasai perdagangan maritim di Selat Malaka</li>
+                <li><strong>Kerajaan Mataram Kuno</strong> (abad ke-8 hingga ke-10): Kerajaan di Jawa Tengah yang membangun Candi Borobudur dan Prambanan</li>
+                <li><strong>Kerajaan Majapahit</strong> (1293-1527): Kerajaan Hindu-Buddha terbesar yang mencapai puncak kejayaan di bawah Hayam Wuruk dan Gajah Mada</li>
+            </ul>
+            
+            <h3>Warisan Budaya</h3>
+            <p>Masa Hindu-Buddha meninggalkan warisan budaya yang masih dapat dilihat hingga kini, termasuk candi-candi megah, sistem pemerintahan kerajaan, dan pengaruh dalam bahasa dan sastra.</p>
+        `
+    },
+    "islam": {
+        title: "Penyebaran Islam dan Kerajaan Islam",
+        content: `
+            <h2>Penyebaran Islam dan Kerajaan Islam di Indonesia</h2>
+            <p>Islam mulai masuk ke Indonesia sekitar abad ke-13 Masehi melalui jalur perdagangan. Penyebaran Islam di Nusantara berlangsung secara damai melalui para pedagang dan ulama dari Arab, Persia, India, dan China.</p>
+            
+            <h3>Kerajaan-Kerajaan Islam Penting</h3>
+            <ul>
+                <li><strong>Kerajaan Samudera Pasai</strong> (1267-1521): Kerajaan Islam pertama di Indonesia, terletak di Aceh</li>
+                <li><strong>Kerajaan Demak</strong> (1475-1554): Kerajaan Islam pertama di Jawa, pusat penyebaran Islam di Jawa</li>
+                <li><strong>Kerajaan Aceh Darussalam</strong> (1496-1903): Kerajaan Islam yang kuat di Sumatra, pusat perdagangan dan ilmu pengetahuan</li>
+                <li><strong>Kerajaan Mataram Islam</strong> (1586-1755): Kerajaan Islam di Jawa Tengah yang mencapai puncak kejayaan di bawah Sultan Agung</li>
+                <li><strong>Kerajaan Gowa-Tallo</strong> (abad ke-16 hingga ke-17): Kerajaan Islam di Sulawesi Selatan</li>
+                <li><strong>Kerajaan Ternate dan Tidore</strong>: Kerajaan Islam di Maluku yang menguasai perdagangan rempah-rempah</li>
+            </ul>
+            
+            <h3>Metode Penyebaran Islam</h3>
+            <ul>
+                <li>Melalui perdagangan antar pulau dan internasional</li>
+                <li>Perkawinan antara pedagang muslim dengan penduduk setempat</li>
+                <li>Pendirian pesantren dan lembaga pendidikan Islam</li>
+                <li>Melalui kesenian dan budaya seperti wayang dan sastra</li>
+                <li>Peran para wali (Wali Songo) di Jawa</li>
+            </ul>
+            
+            <h3>Warisan Budaya Islam</h3>
+            <p>Masa kerajaan Islam meninggalkan warisan budaya seperti masjid-masjid kuno, naskah-naskah keagamaan, sistem kalender Islam, dan pengaruh dalam bahasa Melayu sebagai lingua franca.</p>
+        `
+    },
+    "kolonial": {
+        title: "Masa Kolonialisme di Indonesia",
+        content: "<p>Konten tentang kolonialisme...</p>"
+    },
+    "pergerakan": {
+        title: "Pergerakan Nasional Indonesia",
+        content: "<p>Konten tentang pergerakan nasional...</p>"
+    },
+    "kemerdekaan": {
+        title: "Proklamasi Kemerdekaan Indonesia",
+        content: "<p>Konten tentang kemerdekaan...</p>"
+    }
+};
+
+// Data untuk tur virtual museum
+const virtualTourData = {
+    "museum-nasional": {
+        name: "Museum Nasional Indonesia",
+        images: [
+            "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1580502304784-8985b7eb7260?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1597079913093-9d4c4e73a98e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+        ],
+        currentIndex: 0
+    },
+    "museum-proklamasi": {
+        name: "Museum Perumusan Naskah Proklamasi",
+        images: [
+            "https://images.unsplash.com/photo-1583324113626-70b66b9d7c78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1589500335733-c56bce468678?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+        ],
+        currentIndex: 0
+    },
+    "museum-sumpah-pemuda": {
+        name: "Museum Sumpah Pemuda",
+        images: [
+            "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1580502304784-8985b7eb7260?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1597079913093-9d4c4e73a98e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+        ],
+        currentIndex: 0
+    },
+    "museum-benteng": {
+        name: "Museum Benteng Vredeburg",
+        images: [
+            "https://images.unsplash.com/photo-1589500335733-c56bce468678?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80",
+            "https://images.unsplash.com/photo-1580502304784-8985b7eb7260?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80"
+        ],
+        currentIndex: 0
+    }
+};
+
+// Data untuk kuis
+const quizQuestions = [
+    {
+        question: "Siapa proklamator kemerdekaan Indonesia?",
+        options: ["Soekarno dan Hatta", "Soeharto dan Habibie", "Gajah Mada dan Hayam Wuruk", "Diponegoro dan Imam Bonjol"],
+        correct: 0
+    },
+    {
+        question: "Kerajaan Hindu tertua di Indonesia adalah?",
+        options: ["Majapahit", "Sriwijaya", "Kutai", "Tarumanegara"],
+        correct: 2
+    },
+    {
+        question: "Sumpah Palapa diucapkan oleh?",
+        options: ["Hayam Wuruk", "Gajah Mada", "Raden Wijaya", "Airlangga"],
+        correct: 1
+    },
+    {
+        question: "Peristiwa Rengasdengklok terjadi pada tanggal?",
+        options: ["16 Agustus 1945", "17 Agustus 1945", "18 Agustus 1945", "19 Agustus 1945"],
+        correct: 0
+    },
+    {
+        question: "Organisasi pergerakan nasional pertama adalah?",
+        options: ["Sarekat Islam", "Indische Partij", "Budi Utomo", "Perhimpunan Indonesia"],
+        correct: 2
+    }
+];
+
+// Inisialisasi variabel
+let currentQuestion = 0;
+let score = 0;
+
+// DOM Elements
+const modal = document.getElementById('periodModal');
+const modalBody = document.getElementById('modal-body');
+const closeBtn = document.querySelector('.close');
+const readMoreButtons = document.querySelectorAll('.read-more');
+const hamburger = document.querySelector('.hamburger');
+const navMenu = document.querySelector('.nav-menu');
+const navLinks = document.querySelectorAll('.nav-link');
+const quizIntro = document.getElementById('quiz-intro');
+const quizQuestionsEl = document.getElementById('quiz-questions');
+const quizResults = document.getElementById('quiz-results');
+const startQuizBtn = document.getElementById('start-quiz');
+const nextQuestionBtn = document.getElementById('next-question');
+const restartQuizBtn = document.getElementById('restart-quiz');
+const questionText = document.getElementById('question-text');
+const optionsContainer = document.getElementById('options');
+const scoreText = document.getElementById('score-text');
+const scorePercent = document.getElementById('score-percent');
+const scoreMessage = document.getElementById('score-message');
+const currentQuestionEl = document.getElementById('current-question');
+const progressFill = document.getElementById('progress-fill');
+const tabButtons = document.querySelectorAll('.tab-button');
+const tabPanes = document.querySelectorAll('.tab-pane');
+const timelineItems = document.querySelectorAll('.timeline-item');
+
+// Fungsi untuk inisialisasi tur virtual
+function initVirtualTours() {
+    // Inisialisasi semua tur virtual
+    Object.keys(virtualTourData).forEach(museumId => {
+        const museum = virtualTourData[museumId];
+        updateVirtualTourView(museumId);
+        
+        // Tambahkan event listener untuk tombol navigasi
+        const tourView = document.querySelector(`#${museumId} .tour-view`);
+        if (tourView) {
+            const prevBtn = tourView.querySelector('.tour-btn:nth-child(1)');
+            const nextBtn = tourView.querySelector('.tour-btn:nth-child(3)');
+            const expandBtn = tourView.querySelector('.tour-btn:nth-child(2)');
+            
+            if (prevBtn) {
+                prevBtn.addEventListener('click', () => navigateVirtualTour(museumId, 'prev'));
+            }
+            
+            if (nextBtn) {
+                nextBtn.addEventListener('click', () => navigateVirtualTour(museumId, 'next'));
+            }
+            
+            if (expandBtn) {
+                expandBtn.addEventListener('click', () => toggleFullscreen(tourView));
+            }
+        }
+    });
+}
+
+// Fungsi untuk navigasi tur virtual
+function navigateVirtualTour(museumId, direction) {
+    const museum = virtualTourData[museumId];
+    if (!museum) return;
+    
+    if (direction === 'next') {
+        museum.currentIndex = (museum.currentIndex + 1) % museum.images.length;
+    } else if (direction === 'prev') {
+        museum.currentIndex = (museum.currentIndex - 1 + museum.images.length) % museum.images.length;
+    }
+    
+    updateVirtualTourView(museumId);
+}
+
+// Fungsi untuk memperbarui tampilan tur virtual
+function updateVirtualTourView(museumId) {
+    const museum = virtualTourData[museumId];
+    if (!museum) return;
+    
+    const tourView = document.querySelector(`#${museumId} .tour-view`);
+    if (!tourView) return;
+    
+    const img = tourView.querySelector('img');
+    const indicator = tourView.querySelector('.tour-indicator');
+    
+    if (img) {
+        // Tambahkan efek fade
+        img.classList.add('fade-out');
+        setTimeout(() => {
+            img.src = museum.images[museum.currentIndex];
+            img.alt = `${museum.name} - Gambar ${museum.currentIndex + 1}`;
+            img.classList.remove('fade-out');
+            img.classList.add('fade-in');
+            setTimeout(() => img.classList.remove('fade-in'), 300);
+        }, 150);
+    }
+    
+    // Perbarui indikator
+    if (indicator) {
+        indicator.textContent = `${museum.currentIndex + 1} / ${museum.images.length}`;
+    }
+}
+
+// Fungsi untuk mode layar penuh
+function toggleFullscreen(element) {
+    if (!document.fullscreenElement) {
+        if (element.requestFullscreen) {
+            element.requestFullscreen();
+        } else if (element.webkitRequestFullscreen) {
+            element.webkitRequestFullscreen();
+        } else if (element.msRequestFullscreen) {
+            element.msRequestFullscreen();
+        }
+    } else {
+        if (document.exitFullscreen) {
+            document.exitFullscreen();
+        } else if (document.webkitExitFullscreen) {
+            document.webkitExitFullscreen();
+        } else if (document.msExitFullscreen) {
+            document.msExitFullscreen();
+        }
+    }
+}
+
+// Fungsi untuk menangani event keyboard
+function handleKeyboardNavigation(e) {
+    const activeTab = document.querySelector('.tab-pane.active');
+    if (!activeTab) return;
+    
+    const museumId = activeTab.id;
+    if (!virtualTourData[museumId]) return;
+    
+    if (e.key === 'ArrowLeft') {
+        navigateVirtualTour(museumId, 'prev');
+    } else if (e.key === 'ArrowRight') {
+        navigateVirtualTour(museumId, 'next');
+    } else if (e.key === 'f' || e.key === 'F') {
+        const tourView = activeTab.querySelector('.tour-view');
+        if (tourView) toggleFullscreen(tourView);
+    }
+}
+
+// Event Listeners
+document.addEventListener('DOMContentLoaded', function() {
+    // Modal untuk periodesasi sejarah
+    readMoreButtons.forEach(button => {
+        button.addEventListener('click', function(e) {
+            e.preventDefault();
+            const period = this.getAttribute('data-period');
+            showPeriodModal(period);
+        });
+    });
+
+    closeBtn.addEventListener('click', closeModal);
+    window.addEventListener('click', function(e) {
+        if (e.target === modal) {
+            closeModal();
+        }
+    });
+
+    // Menu hamburger untuk mobile
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('active');
+        navMenu.classList.toggle('active');
+    });
+
+    // Tutup menu mobile saat klik link
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            hamburger.classList.remove('active');
+            navMenu.classList.remove('active');
+        });
+    });
+
+    // Kuis interaktif
+    startQuizBtn.addEventListener('click', startQuiz);
+    nextQuestionBtn.addEventListener('click', nextQuestion);
+    restartQuizBtn.addEventListener('click', restartQuiz);
+
+    // Tab museum
+    tabButtons.forEach(button => {
+        button.addEventListener('click', () => {
+            const tabId = button.getAttribute('data-tab');
+            switchTab(tabId);
+        });
+    });
+
+    // Animasi scroll untuk timeline
+    if (window.IntersectionObserver) {
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        timelineItems.forEach(item => {
+            observer.observe(item);
+        });
+    } else {
+        // Fallback untuk browser yang tidak mendukung IntersectionObserver
+        timelineItems.forEach(item => {
+            item.classList.add('visible');
+        });
+    }
+
+    // Smooth scroll untuk anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const targetId = this.getAttribute('href');
+            if (targetId === '#') return;
+            
+            const targetElement = document.querySelector(targetId);
+            if (targetElement) {
+                const offsetTop = targetElement.offsetTop - 80;
+                window.scrollTo({
+                    top: offsetTop,
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+
+    // Inisialisasi tur virtual
+    initVirtualTours();
+    
+    // Event listener untuk keyboard
+    document.addEventListener('keydown', handleKeyboardNavigation);
+});
+
+// Fungsi untuk menampilkan modal periode sejarah
+function showPeriodModal(period) {
+    if (periodData[period]) {
+        modalBody.innerHTML = periodData[period].content;
+        modal.style.display = 'block';
+        document.body.style.overflow = 'hidden';
+    }
+}
+
+// Fungsi untuk menutup modal
+function closeModal() {
+    modal.style.display = 'none';
+    document.body.style.overflow = 'auto';
+}
+
+// Fungsi untuk berpindah tab
+function switchTab(tabId) {
+    // Hapus kelas active dari semua tab buttons dan panes
+    tabButtons.forEach(button => {
+        button.classList.remove('active');
+    });
+    tabPanes.forEach(pane => {
+        pane.classList.remove('active');
+    });
+
+    // Tambahkan kelas active ke tab button dan pane yang dipilih
+    const activeButton = document.querySelector(`[data-tab="${tabId}"]`);
+    const activePane = document.getElementById(tabId);
+    
+    if (activeButton && activePane) {
+        activeButton.classList.add('active');
+        activePane.classList.add('active');
+    }
+}
+
+// Fungsi untuk memulai kuis
+function startQuiz() {
+    currentQuestion = 0;
+    score = 0;
+    quizIntro.classList.add('hidden');
+    quizQuestionsEl.classList.remove('hidden');
+    quizResults.classList.add('hidden');
+    showQuestion();
+}
+
+// Fungsi untuk menampilkan pertanyaan
+function showQuestion() {
+    const question = quizQuestions[currentQuestion];
+    questionText.textContent = question.question;
+    
+    // Update progress
+    currentQuestionEl.textContent = currentQuestion + 1;
+    const progress = ((currentQuestion) / quizQuestions.length) * 100;
+    progressFill.style.width = `${progress}%`;
+    
+    optionsContainer.innerHTML = '';
+    question.options.forEach((option, index) => {
+        const optionElement = document.createElement('div');
+        optionElement.className = 'option';
+        optionElement.textContent = option;
+        optionElement.dataset.index = index;
+        optionElement.addEventListener('click', selectOption);
+        optionsContainer.appendChild(optionElement);
+    });
+    
+    nextQuestionBtn.disabled = true;
+    nextQuestionBtn.textContent = currentQuestion === quizQuestions.length - 1 ? 
+        'Lihat Hasil' : 'Pertanyaan Selanjutnya';
+}
+
+// Fungsi untuk memilih opsi jawaban
+function selectOption(e) {
+    const selectedOption = e.target;
+    const options = document.querySelectorAll('.option');
+    
+    // Hapus kelas selected dari semua opsi
+    options.forEach(option => {
+        option.classList.remove('selected');
+    });
+    
+    // Tambahkan kelas selected ke opsi yang dipilih
+    selectedOption.classList.add('selected');
+    
+    // Aktifkan tombol next
+    nextQuestionBtn.disabled = false;
+}
+
+// Fungsi untuk pindah ke pertanyaan berikutnya
+function nextQuestion() {
+    const selectedOption = document.querySelector('.option.selected');
+    
+    if (selectedOption) {
+        const selectedIndex = parseInt(selectedOption.dataset.index);
+        
+        // Periksa jawaban
+        if (selectedIndex === quizQuestions[currentQuestion].correct) {
+            score++;
+        }
+        
+        currentQuestion++;
+        
+        if (currentQuestion < quizQuestions.length) {
+            showQuestion();
+        } else {
+            showResults();
+        }
+    }
+}
+
+// Fungsi untuk menampilkan hasil kuis
+function showResults() {
+    quizQuestionsEl.classList.add('hidden');
+    quizResults.classList.remove('hidden');
+    
+    const percentage = (score / quizQuestions.length) * 100;
+    scoreText.textContent = `${score}/${quizQuestions.length}`;
+    scorePercent.textContent = `${percentage}%`;
+    
+    // Update circle progress
+    const circleBackground = document.querySelector('.circle-background');
+    circleBackground.style.background = `conic-gradient(var(--primary) ${percentage}%, var(--gray-light) 0%)`;
+    
+    // Set pesan hasil berdasarkan skor
+    if (percentage >= 80) {
+        scoreMessage.textContent = "Luar biasa! Pengetahuan sejarah Anda sangat baik.";
+    } else if (percentage >= 60) {
+        scoreMessage.textContent = "Bagus! Pengetahuan sejarah Anda cukup baik.";
+    } else if (percentage >= 40) {
+        scoreMessage.textContent = "Cukup baik. Terus pelajari sejarah Indonesia!";
+    } else {
+        scoreMessage.textContent = "Jangan menyerah! Terus belajar sejarah Indonesia.";
+    }
+}
+
+// Fungsi untuk mengulang kuis
+function restartQuiz() {
+    quizResults.classList.add('hidden');
+    quizIntro.classList.remove('hidden');
+}

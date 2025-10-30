@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejarah Indonesia - Perjalanan Panjang Nusantara</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <div class="logo-container">
+                    <h1 class="logo"><i class="fas fa-landmark"></i> Sejarah Indonesia</h1>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link"><i class="fas fa-home"></i> Beranda</a></li>
+                    <li><a href="#periodesasi" class="nav-link"><i class="fas fa-history"></i> Periodesasi</a></li>
+                    <li><a href="#tokoh" class="nav-link"><i class="fas fa-users"></i> Tokoh</a></li>
+                    <li><a href="#museum" class="nav-link"><i class="fas fa-university"></i> Museum</a></li>
+                    <li><a href="#quiz" class="nav-link"><i class="fas fa-question-circle"></i> Kuis</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Sejarah Indonesia</h1>
+            <p class="hero-subtitle">Menelusuri perjalanan panjang Nusantara dari masa prasejarah hingga era reformasi</p>
+            <a href="#periodesasi" class="cta-button">Jelajahi Sejarah <i class="fas fa-arrow-down"></i></a>
+        </div>
+        <div class="scroll-indicator">
+            <span></span>
+        </div>
+    </section>
+
+    <!-- Periodesasi Sejarah -->
+    <section id="periodesasi" class="periodesasi">
+        <div class="container">
+            <div class="section-header">
+                <h2>Periodesasi Sejarah Indonesia</h2>
+                <p>Perjalanan panjang bangsa Indonesia melalui berbagai era dan periode</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3><i class="fas fa-dragon"></i> Prasejarah</h3>
+                        <p>Masa sebelum adanya catatan tertulis. Manusia purba seperti Pithecanthropus Erectus dan Homo Sapiens hidup di Nusantara.</p>
+                        <a href="#" class="read-more" data-period="prasejarah">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3><i class="fas fa-torii-gate"></i> Kerajaan Hindu-Buddha</h3>
+                        <p>Munculnya kerajaan-kerajaan seperti Kutai, Tarumanegara, Sriwijaya, Mataram Kuno, dan Majapahit.</p>
+                        <a href="#" class="read-more" data-period="hindu-buddha">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3><i class="fas fa-mosque"></i> Kerajaan Islam</h3>
+                        <p>Penyebaran Islam dan berdirinya kerajaan-kerajaan Islam seperti Samudera Pasai, Demak, dan Mataram Islam.</p>
+                        <a href="#" class="read-more" data-period="islam">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3><i class="fas fa-ship"></i> Kolonialisme</h3>
+                        <p>Kedatangan bangsa Eropa, penjajahan Portugis, Belanda, Inggris, dan perlawanan rakyat Indonesia.</p>
+                        <a href="#" class="read-more" data-period="kolonial">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3><i class="fas fa-flag"></i> Pergerakan Nasional</h3>
+                        <p>Kebangkitan nasional, berdirinya organisasi pergerakan seperti Budi Utomo, Sarekat Islam, dan PNI.</p>
+                        <a href="#" class="read-more" data-period="pergerakan">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3><i class="fas fa-star"></i> Kemerdekaan</h3>
+                        <p>Proklamasi Kemerdekaan 17 Agustus 1945, perjuangan mempertahankan kemerdekaan, dan pengakuan kedaulatan.</p>
+                        <a href="#" class="read-more" data-period="kemerdekaan">Baca Selengkapnya <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal untuk detail periode -->
+    <div id="periodModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="modal-body">
+                <!-- Konten akan diisi oleh JavaScript -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Tokoh Sejarah -->
+    <section id="tokoh" class="tokoh">
+        <div class="container">
+            <div class="section-header">
+                <h2>Tokoh-Tokoh Penting Sejarah Indonesia</h2>
+                <p>Para pahlawan dan tokoh yang berperan penting dalam sejarah bangsa</p>
+            </div>
+            <div class="tokoh-grid">
+                <div class="tokoh-card">
+                    <div class="tokoh-img">
+                        <img src="images/Gajah-Mada.jpg" alt="Gajah Mada">
+                    </div>
+                    <div class="tokoh-info">
+                        <h3>Gajah Mada</h3>
+                        <p class="tokoh-role">Mahapatih Majapahit</p>
+                        <p class="tokoh-desc">Mahapatih Majapahit yang terkenal dengan Sumpah Palapa untuk menyatukan Nusantara.</p>
+                        <div class="tokoh-era">Kerajaan Majapahit</div>
+                    </div>
+                </div>
+                <div class="tokoh-card">
+                    <div class="tokoh-img">
+                        <img src="images/cut-nyak-dien.jpg" alt="Cut Nyak Dien">
+                    </div>
+                    <div class="tokoh-info">
+                        <h3>Cut Nyak Dien</h3>
+                        <p class="tokoh-role">Pahlawan Nasional</p>
+                        <p class="tokoh-desc">Pahlawan nasional dari Aceh yang memimpin perlawanan terhadap Belanda dalam Perang Aceh.</p>
+                        <div class="tokoh-era">Perang Aceh</div>
+                    </div>
+                </div>
+                <div class="tokoh-card">
+                    <div class="tokoh-img">
+                        <img src="images/soekarno.jpg" alt="Soekarno">
+                    </div>
+                    <div class="tokoh-info">
+                        <h3>Soekarno</h3>
+                        <p class="tokoh-role">Proklamator & Presiden Pertama</p>
+                        <p class="tokoh-desc">Proklamator Kemerdekaan Indonesia dan Presiden pertama Republik Indonesia.</p>
+                        <div class="tokoh-era">Era Kemerdekaan</div>
+                    </div>
+                </div>
+                <div class="tokoh-card">
+                    <div class="tokoh-img">
+                        <img src="images/Mohammad-Hatta.jpg" alt="Mohammad Hatta">
+                    </div>
+                    <div class="tokoh-info">
+                        <h3>Mohammad Hatta</h3>
+                        <p class="tokoh-role">Proklamator & Wakil Presiden Pertama</p>
+                        <p class="tokoh-desc">Proklamator Kemerdekaan Indonesia dan Wakil Presiden pertama Republik Indonesia.</p>
+                        <div class="tokoh-era">Era Kemerdekaan</div>
+                    </div>
+                </div>
+                <div class="tokoh-card">
+                    <div class="tokoh-img">
+                        <img src="images/R.A.Kartini.jpg" alt="R.A. Kartini">
+                    </div>
+                    <div class="tokoh-info">
+                        <h3>R.A. Kartini</h3>
+                        <p class="tokoh-role">Pioneer Emansipasi Wanita</p>
+                        <p class="tokoh-desc">Pelopor kebangkitan perempuan pribumi dengan pemikiran modern tentang emansipasi wanita.</p>
+                        <div class="tokoh-era">Era Kolonial</div>
+                    </div>
+                </div>
+                <div class="tokoh-card">
+                    <div class="tokoh-img">
+                        <img src="images/Pangeran-Diponegoro.jpg" alt="Pangeran Diponegoro">
+                    </div>
+                    <div class="tokoh-info">
+                        <h3>Pangeran Diponegoro</h3>
+                        <p class="tokoh-role">Pemimpin Perang Jawa</p>
+                        <p class="tokoh-desc">Pemimpin Perang Jawa melawan Belanda (1825-1830) yang mengobarkan semangat perlawanan.</p>
+                        <div class="tokoh-era">Perang Jawa</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Museum Virtual -->
+    <section id="museum" class="museum">
+        <div class="container">
+            <div class="section-header">
+                <h2>Museum Virtual Sejarah Indonesia</h2>
+                <p>Jelajahi peninggalan sejarah Indonesia melalui tur virtual interaktif</p>
+            </div>
+            <div class="museum-tabs">
+                <div class="tab-buttons">
+                    <button class="tab-button active" data-tab="museum-nasional">Museum Nasional</button>
+                    <button class="tab-button" data-tab="museum-proklamasi">Museum Proklamasi</button>
+                    <button class="tab-button" data-tab="museum-sumpah-pemuda">Museum Sumpah Pemuda</button>
+                    <button class="tab-button" data-tab="museum-benteng">Museum Benteng Vredeburg</button>
+                </div>
+                <div class="tab-content">
+                    <div id="museum-nasional" class="tab-pane active">
+                        <div class="museum-detail">
+                            <div class="museum-info">
+                                <h3>Museum Nasional Indonesia</h3>
+                                <p>Juga dikenal sebagai Museum Gajah, museum ini merupakan museum pertama dan terbesar di Asia Tenggara. Museum Nasional menyimpan koleksi yang mencakup semua periode sejarah Indonesia.</p>
+                                <div class="museum-highlights">
+                                    <h4>Koleksi Unggulan:</h4>
+                                    <ul>
+                                        <li><i class="fas fa-archway"></i> Patung Bhairawa</li>
+                                        <li><i class="fas fa-drum"></i> Nekara Perunggu</li>
+                                        <li><i class="fas fa-crown"></i> Harta Karun Kerajaan</li>
+                                        <li><i class="fas fa-scroll"></i> Prasasti Kuno</li>
+                                    </ul>
+                                </div>
+                                <!-- Link yang berfungsi untuk tur virtual Museum Nasional -->
+                                <a href="https://artsandculture.google.com/partner/museum-nasional-indonesia" target="_blank" class="cta-button">Kunjungi Tur Virtual <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="museum-preview">
+                                <div class="virtual-tour">
+                                    <div class="tour-view">
+                                        <img src="https://images.unsplash.com/photo-1595526114035-0d45ed16cfbf?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Tur Virtual Museum Nasional">
+                                        <div class="keyboard-hint">
+                                            Gunakan ← → untuk navigasi, F untuk fullscreen
+                                        </div>
+                                        <div class="tour-controls">
+                                            <button class="tour-btn"><i class="fas fa-arrow-left"></i></button>
+                                            <button class="tour-btn"><i class="fas fa-expand"></i></button>
+                                            <button class="tour-btn"><i class="fas fa-arrow-right"></i></button>
+                                        </div>
+                                        <div class="tour-indicator">1 / 4</div>
+                                    </div>
+                                    <div class="tour-info">
+                                        <h4>Tur Virtual 360°</h4>
+                                        <p>Jelajahi ruang pameran Museum Nasional dengan pandangan 360 derajat. Gunakan tombol navigasi atau keyboard untuk berpindah gambar.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="museum-proklamasi" class="tab-pane">
+                        <div class="museum-detail">
+                            <div class="museum-info">
+                                <h3>Museum Perumusan Naskah Proklamasi</h3>
+                                <p>Museum ini terletak di gedung yang menjadi tempat perumusan naskah Proklamasi Kemerdekaan Indonesia. Di sini pengunjung dapat melihat replika ruangan tempat Soekarno, Hatta, dan Achmad Soebardjo merumuskan teks proklamasi.</p>
+                                <div class="museum-highlights">
+                                    <h4>Koleksi Unggulan:</h4>
+                                    <ul>
+                                        <li><i class="fas fa-pen"></i> Replika Naskah Proklamasi</li>
+                                        <li><i class="fas fa-chair"></i> Perabotan Asli Ruangan</li>
+                                        <li><i class="fas fa-clock"></i> Mesin Ketik yang Digunakan</li>
+                                        <li><i class="fas fa-image"></i> Foto Dokumentasi Sejarah</li>
+                                    </ul>
+                                </div>
+                                <!-- Link yang berfungsi untuk tur virtual Museum Proklamasi -->
+                                <a href="https://iha.kemenbud.go.id/portfolio/museum-perumusan-naskah-proklamasi/" target="_blank" class="cta-button">Kunjungi Tur Virtual <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="museum-preview">
+                                <div class="virtual-tour">
+                                    <div class="tour-view">
+                                        <img src="https://images.unsplash.com/photo-1583324113626-70b66b9d7c78?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Tur Virtual Museum Proklamasi">
+                                        <div class="keyboard-hint">
+                                            Gunakan ← → untuk navigasi, F untuk fullscreen
+                                        </div>
+                                        <div class="tour-controls">
+                                            <button class="tour-btn"><i class="fas fa-arrow-left"></i></button>
+                                            <button class="tour-btn"><i class="fas fa-expand"></i></button>
+                                            <button class="tour-btn"><i class="fas fa-arrow-right"></i></button>
+                                        </div>
+                                        <div class="tour-indicator">1 / 4</div>
+                                    </div>
+                                    <div class="tour-info">
+                                        <h4>Tur Virtual 360°</h4>
+                                        <p>Jelajahi ruang bersejarah tempat naskah proklamasi dirumuskan. Gunakan tombol navigasi atau keyboard untuk berpindah gambar.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="museum-sumpah-pemuda" class="tab-pane">
+                        <div class="museum-detail">
+                            <div class="museum-info">
+                                <h3>Museum Sumpah Pemuda</h3>
+                                <p>Museum ini menyimpan koleksi terkait peristiwa Sumpah Pemuda 1928, termasuk foto-foto, dokumen, dan benda-benda bersejarah lainnya. Museum ini terletak di Jalan Kramat Raya 106, Jakarta, yang merupakan tempat dibacakannya Sumpah Pemuda.</p>
+                                <div class="museum-highlights">
+                                    <h4>Koleksi Unggulan:</h4>
+                                    <ul>
+                                        <li><i class="fas fa-scroll"></i> Naskah Asli Sumpah Pemuda</li>
+                                        <li><i class="fas fa-guitar"></i> Biola Wage Rudolf Supratman</li>
+                                        <li><i class="fas fa-image"></i> Foto Dokumentasi Kongres Pemuda</li>
+                                        <li><i class="fas fa-book"></i> Koleksi Buku dan Majalah Zaman Perjuangan</li>
+                                    </ul>
+                                </div>
+                                <!-- Link yang berfungsi untuk tur virtual Museum Sumpah Pemuda -->
+                                <a href="https://id.wikipedia.org/wiki/Museum_Sumpah_Pemuda" target="_blank" class="cta-button">Kunjungi Tur Virtual <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="museum-preview">
+                                <div class="virtual-tour">
+                                    <div class="tour-view">
+                                        <img src="https://images.unsplash.com/photo-1578662996442-48f60103fc96?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Tur Virtual Museum Sumpah Pemuda">
+                                        <div class="keyboard-hint">
+                                            Gunakan ← → untuk navigasi, F untuk fullscreen
+                                        </div>
+                                        <div class="tour-controls">
+                                            <button class="tour-btn"><i class="fas fa-arrow-left"></i></button>
+                                            <button class="tour-btn"><i class="fas fa-expand"></i></button>
+                                            <button class="tour-btn"><i class="fas fa-arrow-right"></i></button>
+                                        </div>
+                                        <div class="tour-indicator">1 / 4</div>
+                                    </div>
+                                    <div class="tour-info">
+                                        <h4>Tur Virtual 360°</h4>
+                                        <p>Jelajahi ruang bersejarah tempat Sumpah Pemuda dibacakan. Gunakan tombol navigasi atau keyboard untuk berpindah gambar.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="museum-benteng" class="tab-pane">
+                        <div class="museum-detail">
+                            <div class="museum-info">
+                                <h3>Museum Benteng Vredeburg</h3>
+                                <p>Benteng Vredeburg adalah benteng peninggalan Belanda yang terletak di Yogyakarta. Museum ini sekarang menjadi museum perjuangan yang menampilkan diorama peristiwa-peristiwa penting dalam perjuangan kemerdekaan Indonesia.</p>
+                                <div class="museum-highlights">
+                                    <h4>Koleksi Unggulan:</h4>
+                                    <ul>
+                                        <li><i class="fas fa-chess-board"></i> Diorama Sejarah Perjuangan</li>
+                                        <li><i class="fas fa-cannons"></i> Meriam Kuno Peninggalan Belanda</li>
+                                        <li><i class="fas fa-image"></i> Foto Sejarah Yogyakarta</li>
+                                        <li><i class="fas fa-map"></i> Peta Perjuangan Kemerdekaan</li>
+                                    </ul>
+                                </div>
+                                <!-- Link yang berfungsi untuk tur virtual Museum Benteng Vredeburg -->
+                                <a href="https://museum.kemenbud.go.id/museum/profile/museum+benteng+vredeburg+yogyakarta?page=18" target="_blank" class="cta-button">Kunjungi Tur Virtual <i class="fas fa-external-link-alt"></i></a>
+                            </div>
+                            <div class="museum-preview">
+                                <div class="virtual-tour">
+                                    <div class="tour-view">
+                                        <img src="https://images.unsplash.com/photo-1589500335733-c56bce468678?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1000&q=80" alt="Tur Virtual Museum Benteng Vredeburg">
+                                        <div class="keyboard-hint">
+                                            Gunakan ← → untuk navigasi, F untuk fullscreen
+                                        </div>
+                                        <div class="tour-controls">
+                                            <button class="tour-btn"><i class="fas fa-arrow-left"></i></button>
+                                            <button class="tour-btn"><i class="fas fa-expand"></i></button>
+                                            <button class="tour-btn"><i class="fas fa-arrow-right"></i></button>
+                                        </div>
+                                        <div class="tour-indicator">1 / 4</div>
+                                    </div>
+                                    <div class="tour-info">
+                                        <h4>Tur Virtual 360°</h4>
+                                        <p>Jelajahi benteng bersejarah dan lihat diorama perjuangan kemerdekaan. Gunakan tombol navigasi atau keyboard untuk berpindah gambar.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kuis Interaktif -->
+    <section id="quiz" class="quiz">
+        <div class="container">
+            <div class="section-header">
+                <h2>Kuis Sejarah Indonesia</h2>
+                <p>Uji pengetahuan Anda tentang sejarah Indonesia</p>
+            </div>
+            <div class="quiz-container">
+                <div id="quiz-intro" class="quiz-intro">
+                    <div class="quiz-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h3>Kuis Sejarah Indonesia</h3>
+                    <p>Uji pengetahuan Anda tentang sejarah Indonesia dengan kuis interaktif ini! Jawab 5 pertanyaan untuk menguji pemahaman Anda.</p>
+                    <button id="start-quiz" class="cta-button">Mulai Kuis <i class="fas fa-play"></i></button>
+                </div>
+                <div id="quiz-questions" class="quiz-questions hidden">
+                    <div class="quiz-progress">
+                        <div class="progress-bar">
+                            <div class="progress-fill" id="progress-fill"></div>
+                        </div>
+                        <span class="progress-text">Pertanyaan <span id="current-question">1</span> dari 5</span>
+                    </div>
+                    <div class="question">
+                        <h3 id="question-text">Pertanyaan akan muncul di sini</h3>
+                        <div id="options" class="options">
+                            <!-- Opsi jawaban akan diisi oleh JavaScript -->
+                        </div>
+                    </div>
+                    <div class="quiz-navigation">
+                        <button id="next-question" class="cta-button">Pertanyaan Selanjutnya <i class="fas fa-arrow-right"></i></button>
+                    </div>
+                </div>
+                <div id="quiz-results" class="quiz-results hidden">
+                    <div class="results-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <h3>Hasil Kuis</h3>
+                    <div class="score-circle">
+                        <div class="circle-background"></div>
+                        <div class="circle-content">
+                            <span id="score-percent">0%</span>
+                            <span id="score-text">0/5</span>
+                        </div>
+                    </div>
+                    <p id="score-message">Pesan hasil akan muncul di sini</p>
+                    <button id="restart-quiz" class="cta-button">Ulangi Kuis <i class="fas fa-redo"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-landmark"></i> Sejarah Indonesia</h3>
+                    <p>Website edukatif untuk mempelajari sejarah panjang Indonesia dari masa prasejarah hingga reformasi.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/bratayudha07" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           title="Kunjungi GitHub saya">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    
+                        <a href="https://twitter.com/username-kamu" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           title="Ikuti saya di Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                    
+                        <a href="https://www.instagram.com/brat.ayudha" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           title="Lihat Instagram saya">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                    
+                        <a href="https://www.youtube.com/@channelKamu" 
+                           target="_blank" 
+                           rel="noopener noreferrer" 
+                           title="Tonton di YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Tautan Cepat</h3>
+                    <ul>
+                        <li><a href="#home"><i class="fas fa-home"></i> Beranda</a></li>
+                        <li><a href="#periodesasi"><i class="fas fa-history"></i> Periodesasi</a></li>
+                        <li><a href="#tokoh"><i class="fas fa-users"></i> Tokoh</a></li>
+                        <li><a href="#museum"><i class="fas fa-university"></i> Museum</a></li>
+                        <li><a href="#quiz"><i class="fas fa-question-circle"></i> Kuis</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Sumber Belajar</h3>
+                    <ul>
+                        <li>
+                            <a href="https://repositori.kemdikbud.go.id/" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               title="Kunjungi Repositori Kemdikbud">
+                                <i class="fas fa-book"></i> Buku Sejarah
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://anri.go.id/" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               title="Arsip Nasional Republik Indonesia">
+                                <i class="fas fa-archive"></i> Dokumen Nasional
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://perpustakaan.bappenas.go.id/" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               title="Arsip Negara dan Dokumen Digital">
+                                <i class="fas fa-file-alt"></i> Arsip Negara
+                            </a>
+                        </li>
+                        <li>
+                            <a href="https://www.youtube.com/results?search_query=dokumenter+sejarah+indonesia" 
+                               target="_blank" 
+                               rel="noopener noreferrer" 
+                               title="Tonton Film Dokumenter Sejarah Indonesia di YouTube">
+                                <i class="fas fa-video"></i> Film Dokumenter
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <ul class="contact-info">
+                        <li><i class="fas fa-envelope"></i> info@sejarahindonesia.id</li>
+                        <li><i class="fas fa-phone"></i> +62 21 1234 5678</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Cirebon, Indonesia</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Sejarah Indonesia. Semua hak dilindungi.</p>
+                <p>web ini dibuat untuk memenuhi tugas kuliah</p>
+            </div>
+        </div>
+    </footer>
+    <script src="scripts/script.js"></script>
+</body>
+</html>
