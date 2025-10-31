@@ -33,12 +33,39 @@ body {
     color: var(--secondary);
     background-color: var(--light);
     overflow-x: hidden;
+    font-display: swap;
 }
 
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+/* Performance Optimizations */
+.timeline-item, .tokoh-card, .cta-button {
+    will-change: transform;
+    transform: translateZ(0);
+}
+
+/* Optimasi gambar */
+.tokoh-img img, .tour-view img {
+    content-visibility: auto;
+}
+
+/* Reduce layout shifts */
+.tokoh-img, .tour-view {
+    aspect-ratio: 16/9;
+}
+
+/* Performance: Reduced motion untuk pengguna yang prefer */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
 }
 
 /* Section Header */
@@ -840,16 +867,17 @@ header {
     display: none;
 }
 
-/* Footer */
+/* Footer Styles - Improved */
 footer {
     background-color: var(--secondary);
     color: white;
     padding: 70px 0 20px;
+    position: relative;
 }
 
 .footer-content {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: 1.5fr 1fr 1fr 1fr;
     gap: 40px;
     margin-bottom: 40px;
 }
@@ -860,12 +888,25 @@ footer {
     display: flex;
     align-items: center;
     gap: 10px;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.footer-section h3::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background-color: var(--primary);
 }
 
 .footer-section p {
     color: #cbd5e0;
     margin-bottom: 20px;
     line-height: 1.7;
+    font-size: 0.95rem;
 }
 
 .footer-section ul {
@@ -874,6 +915,11 @@ footer {
 
 .footer-section ul li {
     margin-bottom: 12px;
+    transition: var(--transition);
+}
+
+.footer-section ul li:hover {
+    transform: translateX(5px);
 }
 
 .footer-section a {
@@ -883,10 +929,12 @@ footer {
     display: flex;
     align-items: center;
     gap: 8px;
+    font-size: 0.95rem;
 }
 
 .footer-section a:hover {
     color: white;
+    transform: translateX(3px);
 }
 
 .social-links {
@@ -899,24 +947,48 @@ footer {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     background-color: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
     transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.social-links a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s;
+}
+
+.social-links a:hover::before {
+    left: 100%;
 }
 
 .social-links a:hover {
     background-color: var(--primary);
     transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(229, 62, 62, 0.3);
 }
 
 .contact-info li {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 12px;
     margin-bottom: 15px;
     color: #cbd5e0;
+    font-size: 0.95rem;
+}
+
+.contact-info i {
+    width: 20px;
+    color: var(--primary);
 }
 
 .footer-bottom {
@@ -925,10 +997,83 @@ footer {
     border-top: 1px solid #4a5568;
     color: #a0aec0;
     font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* Style untuk indikator tur virtual */
+.tour-indicator {
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+/* Style untuk mode fullscreen */
+.tour-view:fullscreen {
+    width: 100%;
+    height: 100%;
+    background: black;
+}
+
+.tour-view:fullscreen img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.tour-view:fullscreen .tour-controls {
+    bottom: 30px;
+}
+
+.tour-view:fullscreen .tour-indicator {
+    bottom: 30px;
+    right: 30px;
+    font-size: 1rem;
+    padding: 8px 15px;
+}
+
+/* Animasi untuk perubahan gambar */
+.tour-view img {
+    transition: opacity 0.3s ease;
+}
+
+.tour-view img.fade-out {
+    opacity: 0;
+}
+
+.tour-view img.fade-in {
+    opacity: 1;
+}
+
+/* Style untuk kontrol keyboard */
+.keyboard-hint {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 8px 12px;
+    border-radius: var(--radius);
+    font-size: 0.8rem;
+    display: none;
+}
+
+.tour-view:hover .keyboard-hint {
+    display: block;
 }
 
 /* Responsive Design */
 @media (max-width: 992px) {
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 30px;
+    }
+    
     .museum-detail {
         grid-template-columns: 1fr;
         gap: 30px;
@@ -956,6 +1101,19 @@ footer {
 }
 
 @media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+    
+    footer {
+        padding: 50px 0 20px;
+    }
+    
+    .footer-section h3 {
+        font-size: 1.2rem;
+    }
+    
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -1025,77 +1183,7 @@ footer {
         grid-template-columns: 1fr;
     }
     
-    .footer-content {
-        grid-template-columns: 1fr;
-    }
-    
     .tab-content {
         padding: 20px;
     }
-}
-/* Style untuk indikator tur virtual */
-.tour-indicator {
-    position: absolute;
-    bottom: 15px;
-    right: 15px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: 0.8rem;
-    font-weight: 500;
-}
-
-/* Style untuk mode fullscreen */
-.tour-view:fullscreen {
-    width: 100%;
-    height: 100%;
-    background: black;
-}
-
-.tour-view:fullscreen img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-}
-
-.tour-view:fullscreen .tour-controls {
-    bottom: 30px;
-}
-
-.tour-view:fullscreen .tour-indicator {
-    bottom: 30px;
-    right: 30px;
-    font-size: 1rem;
-    padding: 8px 15px;
-}
-
-/* Animasi untuk perubahan gambar */
-.tour-view img {
-    transition: opacity 0.3s ease;
-}
-
-.tour-view img.fade-out {
-    opacity: 0;
-}
-
-.tour-view img.fade-in {
-    opacity: 1;
-}
-
-/* Style untuk kontrol keyboard */
-.keyboard-hint {
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    background-color: rgba(0, 0, 0, 0.7);
-    color: white;
-    padding: 8px 12px;
-    border-radius: var(--radius);
-    font-size: 0.8rem;
-    display: none;
-}
-
-.tour-view:hover .keyboard-hint {
-    display: block;
 }
