@@ -4,6 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sejarah Indonesia - Perjalanan Panjang Nusantara</title>
+    
+    <!-- Security Headers -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://cdnjs.cloudflare.com; style-src 'self' https://fonts.googleapis.com https://cdnjs.cloudflare.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' https://images.unsplash.com data:; connect-src 'self'">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    
+    <!-- Preconnect untuk performa -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://images.unsplash.com">
+    
     <link rel="stylesheet" href="styles/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -222,7 +236,7 @@
                                     </ul>
                                 </div>
                                 <!-- Link yang berfungsi untuk tur virtual Museum Nasional -->
-                                <a href="https://artsandculture.google.com/partner/museum-nasional-indonesia" target="_blank" class="cta-button">Kunjungi Tur Virtual <i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://artsandculture.google.com/partner/museum-nasional-indonesia" target="_blank" rel="noopener noreferrer" class="cta-button">Kunjungi Tur Virtual <i class="fas fa-external-link-alt"></i></a>
                             </div>
                             <div class="museum-preview">
                                 <div class="virtual-tour">
@@ -261,7 +275,7 @@
                                     </ul>
                                 </div>
                                 <!-- Link yang berfungsi untuk tur virtual Museum Proklamasi -->
-                                <a href="https://iha.kemenbud.go.id/portfolio/museum-perumusan-naskah-proklamasi/" target="_blank" class="cta-button">Kunjungi Tur Virtual <i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://iha.kemenbud.go.id/portfolio/museum-perumusan-naskah-proklamasi/" target="_blank" rel="noopener noreferrer" class="cta-button">Kunjungi Tur Virtual <i class="fas fa-external-link-alt"></i></a>
                             </div>
                             <div class="museum-preview">
                                 <div class="virtual-tour">
@@ -300,7 +314,7 @@
                                     </ul>
                                 </div>
                                 <!-- Link yang berfungsi untuk tur virtual Museum Sumpah Pemuda -->
-                                <a href="https://id.wikipedia.org/wiki/Museum_Sumpah_Pemuda" target="_blank" class="cta-button">Kunjungi Tur Virtual <i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://id.wikipedia.org/wiki/Museum_Sumpah_Pemuda" target="_blank" rel="noopener noreferrer" class="cta-button">Kunjungi Tur Virtual <i class="fas fa-external-link-alt"></i></a>
                             </div>
                             <div class="museum-preview">
                                 <div class="virtual-tour">
@@ -339,7 +353,7 @@
                                     </ul>
                                 </div>
                                 <!-- Link yang berfungsi untuk tur virtual Museum Benteng Vredeburg -->
-                                <a href="https://museum.kemenbud.go.id/museum/profile/museum+benteng+vredeburg+yogyakarta?page=18" target="_blank" class="cta-button">Kunjungi Tur Virtual <i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://museum.kemenbud.go.id/museum/profile/museum+benteng+vredeburg+yogyakarta?page=18" target="_blank" rel="noopener noreferrer" class="cta-button">Kunjungi Tur Virtual <i class="fas fa-external-link-alt"></i></a>
                             </div>
                             <div class="museum-preview">
                                 <div class="virtual-tour">
@@ -420,39 +434,40 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer yang Diperbaiki -->
     <footer>
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
                     <h3><i class="fas fa-landmark"></i> Sejarah Indonesia</h3>
-                    <p>Website edukatif untuk mempelajari sejarah panjang Indonesia dari masa prasejarah hingga reformasi.</p>
+                    <p>Website edukatif untuk mempelajari sejarah panjang Indonesia dari masa prasejarah hingga reformasi. Mari bersama menjaga warisan sejarah bangsa.</p>
                     <div class="social-links">
                         <a href="https://github.com/bratayudha07" 
                            target="_blank" 
                            rel="noopener noreferrer" 
-                           title="Kunjungi GitHub saya">
+                           title="Kunjungi GitHub saya" 
+                           aria-label="GitHub">
                             <i class="fab fa-github"></i>
                         </a>
-                    
                         <a href="https://twitter.com/username-kamu" 
                            target="_blank" 
                            rel="noopener noreferrer" 
-                           title="Ikuti saya di Twitter">
+                           title="Ikuti saya di Twitter" 
+                           aria-label="Twitter">
                             <i class="fab fa-twitter"></i>
                         </a>
-                    
                         <a href="https://www.instagram.com/brat.ayudha" 
                            target="_blank" 
                            rel="noopener noreferrer" 
-                           title="Lihat Instagram saya">
+                           title="Lihat Instagram saya" 
+                           aria-label="Instagram">
                             <i class="fab fa-instagram"></i>
                         </a>
-                    
                         <a href="https://www.youtube.com/@channelKamu" 
                            target="_blank" 
                            rel="noopener noreferrer" 
-                           title="Tonton di YouTube">
+                           title="Tonton di YouTube" 
+                           aria-label="YouTube">
                             <i class="fab fa-youtube"></i>
                         </a>
                     </div>
@@ -505,20 +520,22 @@
                     </ul>
                 </div>
                 <div class="footer-section">
-                    <h3>Kontak</h3>
+                    <h3>Kontak & Informasi</h3>
                     <ul class="contact-info">
                         <li><i class="fas fa-envelope"></i> info@sejarahindonesia.id</li>
                         <li><i class="fas fa-phone"></i> +62 21 1234 5678</li>
                         <li><i class="fas fa-map-marker-alt"></i> Cirebon, Indonesia</li>
+                        <li><i class="fas fa-clock"></i> Senin - Jumat: 09:00 - 17:00</li>
                     </ul>
                 </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2025 Sejarah Indonesia. Semua hak dilindungi.</p>
-                <p>web ini dibuat untuk memenuhi tugas kuliah</p>
+                <p>Website ini dibuat untuk memenuhi tugas kuliah dengan tujuan edukasi sejarah Indonesia.</p>
             </div>
         </div>
     </footer>
+
     <script src="scripts/script.js"></script>
 </body>
 </html>
