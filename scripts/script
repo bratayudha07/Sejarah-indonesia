@@ -96,7 +96,7 @@ const virtualTourData = {
     "museum-nasional": {
         name: "Museum Nasional Indonesia",
         images: [
-            "images/museum-nasional-indonesia(1).jpg",
+            "images/museum-nasional-indonesia.jpg",
             "images/museum-nasional-indonesia(2).jpg",
             "images/museum-nasional-indonesia(3).jpg",
             "images/museum-nasional-indonesia(4).jpg"
